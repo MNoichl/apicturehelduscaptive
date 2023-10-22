@@ -1,0 +1,83 @@
+{
+    "project": {
+      "name": "imagining the mind",
+      "quality": 1
+   },
+    "loader": {
+      "info": "/data/info.md",
+      "items": "/data.csv",
+      "timeline": "/data/timeline.csv",
+      "tsne": "/data/tsne.csv",
+  
+      "layouts": [
+        {
+          "title": "tsne",
+          "url": "/data/tsne.csv"
+      },
+      
+      {"title": "time",
+      "url": "/data/timeline.csv"}
+    
+      ],
+      
+      "textures": {
+        "preview": "/data/01_05_23_prepared_images/sprites/spritesheet.json",
+        "medium": {
+          "size": 256,
+          "url": "/data/01_05_23_prepared_images/sprites/spritesheet.json"
+        },
+        "detail": {
+          "size": 1024,
+          "url": "/data/01_05_23_prepared_images/1024/"
+        },
+        "big": {
+          "size": 4096,
+          "url": "/data/01_05_23_prepared_images/4096/"
+        }
+      }
+    },
+    "style": {
+      "fontColor": "#f7efcd",
+      "fontColorActive": "#f7efcd",
+      "fontBackground": "#f7efcd00",
+      "textShadow": "none",
+      "canvasBackground": "#1c1e1f",
+      "timelineBackground": "#f7efcd",
+      "timelineFontColor": "#000000",
+      "backgroundHeader": "#035151",
+      "fontColorHeader": "#fffefa",
+      "detailBackground": "#464343",
+      "infoBackground": "#353535",
+      "infoFontColor": "#f7efcd",
+      "detailFontColor": "#f7efcd",
+      "detailLabelColor": "#f7efcd",
+      
+  
+      "searchbarBackground": "#353535"
+    },
+    "projection": {
+      "columns": 14
+    },
+    "detail": {
+      "structure": [
+        {
+          "name": "",
+          "source": "_metaphor",
+          "display": "wide",
+          "type": "text"
+          },       
+        {
+          "name": "",
+          "source": "'<i> –' + column._author + '</i><br><br><br><br><br><br><br><br>'",
+          "display": "column",
+          "type": "function"
+        },       
+        {
+          "name": "Link",
+          "source": "_url ",
+          "display": "column",
+          "type": "function"
+        }
+      ]
+    }
+  }  
